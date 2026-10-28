@@ -77,9 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
             formulario.reset();
 
-            campos.forEach(function (campo) {
-                campo.classList.remove("is-valid", "is-invalid");
-            });
-        });
-    }
-});
+      
