@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoZone | Contacto</title>
+    <title>MotoZone | Mantenimiento</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -19,8 +19,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
                     <li class="nav-item"><a class="nav-link" href="equipamiento.html">Equipamiento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mantenimiento.html">Mantenimiento</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mantenimiento.html">Mantenimiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -28,84 +28,59 @@
 
     <div class="container seccion pagina">
         <div class="text-center mb-5">
-            <p class="etiqueta">ESTAMOS PARA AYUDARTE</p>
-            <h1>CONTACTA CON <span>MOTOZONE</span></h1>
-            <p>Completa el formulario para compartir tus intereses sobre motocicletas.</p>
+            <p class="etiqueta">CUIDA TU MÁQUINA</p>
+            <h1>MANTENIMIENTO <span>PREVENTIVO</span></h1>
+            <p>Una revisión periódica ayuda a mantener tu motocicleta en buenas condiciones.</p>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <form id="formularioContacto" class="formulario" novalidate>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" minlength="3" required>
-                            <div class="invalid-feedback">Escribe tu nombre (mínimo 3 caracteres).</div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="correo" class="form-label">Correo electrónico</label>
-                            <input type="email" id="correo" name="correo" class="form-control" placeholder="correo@ejemplo.com" required>
-                            <div class="invalid-feedback">Escribe un correo electrónico válido.</div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="tipo" class="form-label">¿Qué te interesa?</label>
-                            <select id="tipo" name="tipo" class="form-select" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="deportivas">Motocicletas deportivas</option>
-                                <option value="urbanas">Motocicletas urbanas</option>
-                                <option value="aventura">Motocicletas de aventura</option>
-                                <option value="equipo">Equipamiento y accesorios</option>
-                                <option value="mantenimiento">Mantenimiento</option>
-                            </select>
-                            <div class="invalid-feedback">Selecciona un tema de interés.</div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="cilindrada" class="form-label">Cilindrada de interés</label>
-                            <select id="cilindrada" name="cilindrada" class="form-select" required>
-                                <option value="">Selecciona una cilindrada</option>
-                                <option value="125">125 cc</option>
-                                <option value="150">150 cc</option>
-                                <option value="200">200 cc</option>
-                                <option value="250">250 cc</option>
-                                <option value="400+">400 cc o más</option>
-                                <option value="sin-preferencia">Sin preferencia</option>
-                            </select>
-                            <div class="invalid-feedback">Selecciona una opción.</div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Escribe tu pregunta o comentario..." minlength="10" required></textarea>
-                            <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="acepto" required>
-                                <label class="form-check-label" for="acepto">Confirmo que los datos proporcionados son correctos.</label>
-                                <div class="invalid-feedback">Debes marcar esta casilla.</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-moto w-100">ENVIAR MENSAJE</button>
-                        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Motocicleta para revisión">
+                    <div class="tarjeta-contenido">
+                        <h3>1. Revisa las llantas</h3>
+                        <p>Comprueba la presión recomendada, el desgaste y el estado general antes de salir.</p>
                     </div>
-
-                    <div id="respuestaFormulario" class="mensaje-formulario" role="status" aria-live="polite"></div>
-                </form>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=900&q=80" alt="Motocicleta en primer plano">
+                    <div class="tarjeta-contenido">
+                        <h3>2. Comprueba los frenos</h3>
+                        <p>Verifica su funcionamiento y revisa las pastillas y el líquido según el manual.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1558980394-0c9b7c6b2f4c?auto=format&fit=crop&w=900&q=80" alt="Motocicleta de estilo clásico">
+                    <div class="tarjeta-contenido">
+                        <h3>3. Cuida la cadena</h3>
+                        <p>Si tu moto tiene cadena, revisa su tensión, lubricación y limpieza de acuerdo con el fabricante.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Motocicleta estacionada">
+                    <div class="tarjeta-contenido">
+                        <h3>4. Verifica el aceite</h3>
+                        <p>Comprueba el nivel y realiza los cambios con el tipo de aceite y los intervalos indicados en el manual.</p>
+                    </div>
+                </article>
             </div>
         </div>
+
+        <section class="consejo mt-5">
+            <h2>Antes de cada recorrido</h2>
+            <p>Comprueba luces, espejos, llantas, frenos y posibles fugas. Si detectas una falla importante, no conduzcas hasta revisarla.</p>
+        </section>
     </div>
 
     <footer><p>© 2026 MotoZone | Pasión por las motocicletas</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
 
